@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    background: url(https://image.freepik.com/free-photo/abstract-urban-night-light-bokeh-defocused-background_1421-468.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-card{
+    width: 400px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-header{
+    background: radial-gradient(black, transparent);
+    padding: 60px 40px;
+}
+    /*-- start photo edge --*/
+.pic{
+    display: inline-block;
+    padding: 8px;
+    background: linear-gradient(130deg, #9a25c9, #3a50cf, #df3333);
+    margin: auto;
+    border-radius: 50%;
+    background-size: 200% 200%;
+    animation: animated-gradient 2s linear infinite;
+}
+
+@keyframes animated-gradient{
+    25%{
+        background-position: left bottom;
+    }
+    50%{
+        background-position: right bottom;
+    }
+    75%{
+        background-position: right top;
+    }
+    100%{
+        background-position: left top;
+    }
+
+}
+
+.pic img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+/* end animated edge */
+
+.name{
+    color: #f2f2f2;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.desc{
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.sm{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.sm a{
+    color: #f2f2f2;
+    width: 70px;
+    font-size: 40px;
+    transition: .3s linear;
+}
+
+.sm #git:hover{
+    color: #8d06c2;
+}
+
+.sm #inst:hover{
+    color: #C13584;
+}
+
+.sm #link:hover{
+    color: #2867B2;
+}
+
+.contact-btn{
+    display: inline-block;
+    padding: 12px 50px;
+    color: #00ffff;
+    border: 2px solid #00ffff;
+    border-radius: 6px;
+    margin-top: 16px;
+    transition: .3s linear;
+}
+
+.contact-btn:hover{
+    background: linear-gradient(130deg, #9a25c9, #3a50cf, #df3333);;
+    color: #f2f2f2;
+}
+
+.card-footer{
+    background: #f4f4f4;
+    padding: 30px;
+}
+
+.numbers{
+    display: flex;
+    align-items: center;
+}
+
+.items{
+    flex: 1;
+    font-weight: 13px;
+    color: #5333df;
+}
+
+.items i{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.items span{
+    display: block;
+    color: #2c3a47;
+    font-size: 15px;
+    padding: 15px;
+}
